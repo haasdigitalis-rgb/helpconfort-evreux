@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dépannage Urgence Évreux – Plomberie, Électricité, Serrurerie | Help Confort</title>
+  <meta name="description" content="Dépannage urgent à Évreux et Dreux : plomberie, électricité, serrurerie, vitrerie, volets roulants. Intervention rapide 8h–20h du lundi au vendredi. Devis gratuit. Appelez le 02 32 29 12 50.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://helpconfort-evreux.fr/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // Consent Mode v2 - refus par défaut
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Schema LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Help Confort Dreux & Évreux",
+    "image": "",
+    "description": "Dépannage urgence et amélioration de l'habitat à Évreux et Dreux. Plomberie, électricité, serrurerie, vitrerie, volets roulants, adaptation PMR. Marque La Poste.",
+    "telephone": "+33232291250",
+    "email": "dreux@helpconfort.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "39 Rue Hippolyte Lozier",
+      "addressLocality": "Nonancourt",
+      "postalCode": "27320",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Évreux", "Dreux", "Nonancourt", "Eure", "Eure-et-Loir"],
+    "openingHours": ["Mo-Fr 08:00-20:00", "Sa 08:30-13:30"],
+    "priceRange": "€€",
+    "sameAs": ["https://www.helpconfort.com/agency/138-help-confort-dreux-evreux"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --yellow: #F5C400;
+      --yellow-dark: #D4A900;
+      --navy: #0E1A35;
+      --navy-light: #1A2B4E;
+      --red: #D93025;
+      --white: #FFFFFF;
+      --light: #F4F5F7;
+      --gray: #7A8196;
+      --border: #E2E5EE;
+      --text: #1C2238;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    img { max-width: 100%; display: block; }
+
+    /* ── PHONE VAR ── */
+    .PHONE::before { content: "02 32 29 12 50"; }
+
+    /* ── URGENCE BANDEAU ── */
+    .urgence-band {
+      background: var(--red);
+      color: var(--white);
+      text-align: center;
+      padding: 8px 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+    .urgence-band a {
+      color: var(--yellow);
+      text-decoration: underline;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--navy);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-badge {
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 6px 12px;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .logo-sub {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .laposte-tag {
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 5px;
+      letter-spacing: 0.06em;
+    }
+
+    .header-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--yellow);
+      letter-spacing: 0.02em;
+    }
+
+    .header-hours {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .btn-call-header {
+      display: none;
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 10px 18px;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      padding: 56px 20px 60px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -80px;
+      width: 420px; height: 420px;
+      background: var(--yellow);
+      opacity: 0.06;
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -60px;
+      width: 280px; height: 280px;
+      background: var(--yellow);
+      opacity: 0.04;
+      border-radius: 50%;
+    }
+
+    .hero-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero-tag::before {
+      content: '⚡';
+      font-size: 0.9rem;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      font-size: clamp(2.4rem, 7vw, 3.8rem);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      color: var(--yellow);
+    }
+
+    .hero-sub {
+      color: rgba(255,255,255,0.75);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+      max-width: 560px;
+    }
+
+    .hero-phone-block {
+      margin-bottom: 28px;
+    }
+
+    .hero-phone-label {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .btn-call-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      padding: 16px 28px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-call-hero:hover {
+      background: var(--yellow-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-call-hero .icon {
+      font-size: 1.4rem;
+      animation: ring 2.5s ease infinite;
+    }
+
+    @keyframes ring {
+      0%, 90%, 100% { transform: rotate(0deg); }
+      92% { transform: rotate(12deg); }
+      94% { transform: rotate(-10deg); }
+      96% { transform: rotate(8deg); }
+      98% { transform: rotate(-6deg); }
+    }
+
+    .hero-reassurance {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 6px 12px;
+    }
+
+    .hero-pill .check {
+      color: var(--yellow);
+      font-size: 0.9rem;
+    }
+
+    /* ── PREUVES / STATS ── */
+    .stats {
+      background: var(--yellow);
+      padding: 28px 20px;
+    }
+
+    .stats-grid {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 12px 8px;
+    }
+
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--navy);
+      opacity: 0.75;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+    }
+
+    .accent-line {
+      width: 48px;
+      height: 4px;
+      background: var(--yellow);
+      margin: 12px 0 20px;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      padding: 60px 20px;
+      background: var(--light);
+    }
+
+    .services-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 20px;
+      border-left: 4px solid var(--yellow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(14,26,53,0.1);
+    }
+
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .service-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .service-desc {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    .services-cta {
+      text-align: center;
+    }
+
+    /* ── BOUTONS ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      padding: 15px 28px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: background 0.2s, transform 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--yellow-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 24px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border: 2px solid var(--navy);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    /* ── CONFIANCE ── */
+    .confiance {
+      padding: 60px 20px;
+      background: var(--white);
+    }
+
+    .confiance-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .confiance-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .confiance-card {
+      background: var(--light);
+      padding: 24px 20px;
+      border-top: 3px solid var(--navy);
+    }
+
+    .confiance-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .confiance-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .confiance-text {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    /* ── AVIS ── */
+    .avis-section {
+      padding: 60px 20px;
+      background: var(--navy);
+    }
+
+    .avis-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .avis-section .section-title {
+      color: var(--white);
+    }
+
+    .avis-section .section-sub {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .avis-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .avis-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+    }
+
+    .avis-stars {
+      color: var(--yellow);
+      font-size: 1rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .avis-text {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .avis-author {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      color: var(--yellow);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    /* ── ZONE ── */
+    .zone {
+      padding: 60px 20px;
+      background: var(--light);
+    }
+
+    .zone-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .zone-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+
+    .zone-tag {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── FAQ ── */
+    .faq {
+      padding: 60px 20px;
+      background: var(--white);
+    }
+
+    .faq-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    .faq-question {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--navy);
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      gap: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .faq-question .arrow {
+      font-size: 1rem;
+      color: var(--yellow);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-bottom: 18px;
+    }
+
+    /* ── CTA FINAL ── */
+    .cta-final {
+      padding: 64px 20px;
+      background: var(--yellow);
+    }
+
+    .cta-final-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin-bottom: 12px;
+    }
+
+    .cta-final p {
+      color: var(--navy);
+      opacity: 0.7;
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    .cta-final-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 8vw, 3rem);
+      color: var(--navy);
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .cta-final-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--navy);
+      padding: 40px 20px 24px;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 24px;
+    }
+
+    .footer-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--yellow);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .footer-info {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+
+    .footer-info a {
+      color: var(--yellow);
+    }
+
+    .footer-hours-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .footer-hours-item {
+      display: flex;
+      justify-content: space-between;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+      padding: 3px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-legal a {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      transition: color 0.2s;
+    }
+
+    .footer-legal a:hover {
+      color: var(--yellow);
+    }
+
+    .footer-credit {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.7rem;
+    }
+
+    /* ── STICKY BAR ── */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--yellow);
+      z-index: 999;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+    }
+
+    .sticky-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--navy);
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .sticky-text span {
+      display: block;
+      font-weight: 500;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+
+    .btn-sticky {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 11px 18px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+      animation: pulse-btn 2s ease infinite;
+    }
+
+    @keyframes pulse-btn {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(14,26,53,0.4); }
+      50% { box-shadow: 0 0 0 8px rgba(14,26,53,0); }
+    }
+
+    .btn-sticky:hover { background: var(--navy-light); }
+
+    /* ── MARQUE LA POSTE ── */
+    .laposte-banner {
+      background: var(--white);
+      border-top: 3px solid var(--yellow);
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .laposte-banner-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .laposte-banner-text {
+      font-size: 0.82rem;
+      color: var(--gray);
+    }
+
+    .laposte-badge {
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── COOKIE BANNER ── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 72px;
+      left: 12px;
+      right: 12px;
+      background: var(--navy);
+      color: var(--white);
+      z-index: 9999;
+      padding: 16px 18px;
+      border-top: 3px solid var(--yellow);
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
+      display: none;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    #cookie-banner.visible { display: block; }
+
+    .cookie-text {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .cookie-text a {
+      color: var(--yellow);
+      text-decoration: underline;
+    }
+
+    .cookie-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-accept-cookies {
+      background: var(--yellow);
+      color: var(--navy);
+      border: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 9px 18px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-refuse-cookies {
+      background: transparent;
+      color: rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.82rem;
+      padding: 9px 14px;
+      cursor: pointer;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .header-phone { font-size: 1.1rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .confiance-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 3fr; }
+    }
+
+    @media (min-width: 600px) {
+      .avis-grid { grid-template-columns: repeat(2, 1fr); }
+      .btn-call-header { display: inline-flex; }
+      .header-phone { display: none; }
+    }
+
+    /* Body bottom padding for sticky */
+    body { padding-bottom: 64px; }
+  </style>
+</head>
+<body>
+
+<!-- URGENCE BANDEAU -->
+<div class="urgence-band">
+  🚨 DÉPANNAGE URGENT ÉVREUX – Intervention rapide 8h–20h —
+  <a href="tel:+33232291250" onclick="gtag('event','click_call',{'event_category':'contact','event_label':'bandeau_urgence'})">
+    <span class="PHONE"></span>
+  </a>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-logo">
+    <div>
+      <div class="logo-badge">HELP CONFORT</div>
+      <div class="logo-sub">
+        Dreux &amp; Évreux<br>
+        <span class="laposte-tag">✦ MARQUE LA POSTE</span>
+      </div>
+    </div>
+  </div>
+  <div class="header-cta">
+    <a class="btn-call-header" href="tel:+33232291250"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'header_btn'})">
+      📞 <span class="PHONE"></span>
+    </a>
+    <a class="header-phone" href="tel:+33232291250"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'header_phone'})">
+      <span class="PHONE"></span>
+    </a>
+    <div class="header-hours">Lun–Ven 8h–20h · Sam 8h30–13h30</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">INTERVENTION RAPIDE À ÉVREUX</div>
+    <h1>Dépannage urgent<br><span>à Évreux ?</span><br>On arrive.</h1>
+    <p class="hero-sub">
+      Plomberie, électricité, serrurerie, vitrerie, volets roulants.
+      Techniciens qualifiés, assurés, disponibles du lundi au samedi.
+    </p>
+    <div class="hero-phone-block">
+      <div class="hero-phone-label">Appelez maintenant – Devis gratuit</div>
+      <a class="btn-call-hero" href="tel:+33232291250"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'hero_cta'})">
+        <span class="icon">📞</span>
+        <span class="PHONE"></span>
+      </a>
+    </div>
+    <div class="hero-reassurance">
+      <div class="hero-pill"><span class="check">✓</span> Devis gratuit</div>
+      <div class="hero-pill"><span class="check">✓</span> Techniciens assurés RC Pro</div>
+      <div class="hero-pill"><span class="check">✓</span> +60 agences en France</div>
+      <div class="hero-pill"><span class="check">✓</span> Marque La Poste</div>
+      <div class="hero-pill"><span class="check">✓</span> Intervention sam. matin</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">+60</div>
+      <div class="stat-label">Agences France</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24h</div>
+      <div class="stat-label">Délai moyen devis</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">7+</div>
+      <div class="stat-label">Métiers couverts</div>
+    </div>
+  </div>
+</div>
+
+<!-- MARQUE LA POSTE -->
+<div class="laposte-banner">
+  <div class="laposte-banner-inner">
+    <span class="laposte-badge">✦ MARQUE LA POSTE</span>
+    <span class="laposte-banner-text">Help Confort Évreux est une entreprise indépendante membre du réseau Help Confort, marque de La Poste – gage de sérieux, proximité et confiance.</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="services-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Nos Interventions à Évreux</h2>
+    <p class="section-sub">Second œuvre, dépannage urgent et amélioration de l'habitat</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <div class="service-name">Plomberie</div>
+        <div class="service-desc">Recherche de fuites, remplacement sanitaires, WC, chauffe-eau, robinetterie, canalisations.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <div class="service-name">Électricité</div>
+        <div class="service-desc">Pannes, disjonctions, tableaux électriques, détecteurs de fumée, radiateurs.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+        <div class="service-name">Serrurerie</div>
+        <div class="service-desc">Ouverture porte claquée/verrouillée, remplacement serrures, cylindres, boîtes aux lettres.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪟</div>
+        <div class="service-name">Vitrerie</div>
+        <div class="service-desc">Remplacement vitrage cassé ou fissuré, simple / double / triple vitrage, miroirs.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <div class="service-name">Volets Roulants</div>
+        <div class="service-desc">Réparation et pose volets manuels ou motorisés, PVC ou aluminium, sur mesure.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">♿</div>
+        <div class="service-name">Adaptation PMR</div>
+        <div class="service-desc">Aménagements normes PMR, logements privés et ERP, transformation baignoire en douche.</div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <a class="btn-primary" href="tel:+33232291250"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'services_cta'})">
+        📞 Appeler pour un devis gratuit
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIANCE -->
+<section class="confiance">
+  <div class="confiance-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Pourquoi Choisir Help Confort ?</h2>
+    <p class="section-sub">Des garanties concrètes pour votre tranquillité</p>
+
+    <div class="confiance-grid">
+      <div class="confiance-card">
+        <div class="confiance-icon">🛡️</div>
+        <div class="confiance-title">Techniciens qualifiés & assurés</div>
+        <div class="confiance-text">Habilitations à jour, assurance décennale et responsabilité civile professionnelle. Vous êtes couverts.</div>
+      </div>
+      <div class="confiance-card">
+        <div class="confiance-icon">📋</div>
+        <div class="confiance-title">Devis clair avant intervention</div>
+        <div class="confiance-text">Tarification au forfait ou horaire, devis détaillé fourni avant tout démarrage des travaux.</div>
+      </div>
+      <div class="confiance-card">
+        <div class="confiance-icon">🕗</div>
+        <div class="confiance-title">Horaires étendus</div>
+        <div class="confiance-text">Disponibles lundi–vendredi 8h–20h et le samedi matin. Prise de RDV l'après-midi.</div>
+      </div>
+      <div class="confiance-card">
+        <div class="confiance-icon">📍</div>
+        <div class="confiance-title">Ancrage local fort</div>
+        <div class="confiance-text">Agence indépendante locale, connaissance du terrain ébroïcien, réactivité maximale sur Évreux et alentours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section class="avis-section">
+  <div class="avis-inner">
+    <div class="accent-line" style="background:var(--yellow)"></div>
+    <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+    <p class="section-sub">Évreux, Dreux et alentours</p>
+
+    <div class="avis-grid">
+      <div class="avis-card">
+        <div class="avis-stars">★★★★★</div>
+        <p class="avis-text">« Intervention rapide pour une fuite d'eau chez moi à Évreux. Technicien sérieux, devis clair, problème réglé en 2h. Je recommande vraiment. »</p>
+        <div class="avis-author">— Marie-Claude L., Évreux</div>
+      </div>
+      <div class="avis-card">
+        <div class="avis-stars">★★★★★</div>
+        <p class="avis-text">« Porte claquée en plein milieu de journée. Rappelé en moins de 20 minutes, technicien sur place en 1h. Prix honnête et travail propre. »</p>
+        <div class="avis-author">— Frédéric M., Dreux</div>
+      </div>
+      <div class="avis-card">
+        <div class="avis-stars">★★★★☆</div>
+        <p class="avis-text">« Panne électrique résolue rapidement, l'équipe est professionnelle et rassurante. Je suis ravi de la qualité de service. »</p>
+        <div class="avis-author">— Isabelle R., Nonancourt</div>
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <a class="btn-primary" href="tel:+33232291250"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'avis_cta'})">
+        📞 Appelez-nous maintenant
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE D'INTERVENTION -->
+<section class="zone">
+  <div class="zone-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Zone d'Intervention</h2>
+    <p class="section-sub">Nous intervenons à Évreux, Dreux et dans tout le secteur Eure / Eure-et-Loir</p>
+
+    <div class="zone-list">
+      <span class="zone-tag">📍 Évreux</span>
+      <span class="zone-tag">📍 Dreux</span>
+      <span class="zone-tag">📍 Nonancourt</span>
+      <span class="zone-tag">📍 Gravigny</span>
+      <span class="zone-tag">📍 Le Neubourg</span>
+      <span class="zone-tag">📍 Pacy-sur-Eure</span>
+      <span class="zone-tag">📍 Vernon</span>
+      <span class="zone-tag">📍 Louviers</span>
+      <span class="zone-tag">📍 Gaillon</span>
+      <span class="zone-tag">📍 Eure (27)</span>
+      <span class="zone-tag">📍 Eure-et-Loir (28)</span>
+    </div>
+
+    <div>
+      <a class="btn-primary" href="tel:+33232291250"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'zone_cta'})">
+        📞 Vérifier la disponibilité dans votre secteur
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Questions Fréquentes</h2>
+    <p class="section-sub">Tout ce que vous devez savoir avant d'appeler</p>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Intervenez-vous en urgence le soir ou le week-end ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Nous intervenons du lundi au vendredi de 8h à 20h et le samedi matin de 8h30 à 13h30. Des RDV sont possibles l'après-midi le samedi sur demande. Appelez-nous pour connaître les disponibilités en temps réel.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Le devis est-il vraiment gratuit ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Oui, systématiquement. Nos techniciens évaluent la situation avant toute intervention et vous remettent un devis détaillé. Aucun frais engagé sans votre accord.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Vos techniciens sont-ils assurés ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Oui. Tous nos techniciens sont couverts par une assurance responsabilité civile professionnelle et une assurance décennale pour les travaux le nécessitant. Habilitations et formations à jour.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Quels modes de paiement acceptez-vous ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Chèque et virement bancaire. Nos prestations sont facturées au forfait ou à l'heure selon la complexité de l'intervention, toujours avec devis préalable.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Help Confort c'est quoi exactement ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        Help Confort est le premier réseau national de dépannage d'urgence avec plus de 60 agences en France. C'est une marque de La Poste. L'agence de Dreux &amp; Évreux est une entreprise indépendante fière d'appartenir à ce réseau reconnu.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="cta-final-inner">
+    <h2>Un problème chez vous à Évreux ?<br>Appelez maintenant.</h2>
+    <p>Devis gratuit · Techniciens qualifiés · Marque La Poste</p>
+    <a class="cta-final-phone" href="tel:+33232291250"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_phone'})">
+      📞 <span class="PHONE"></span>
+    </a>
+    <div class="cta-final-actions">
+      <a class="btn-secondary" href="tel:+33232291250"
+         style="background:var(--navy);color:var(--white);border-color:var(--navy)"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_btn'})">
+        📞 Appeler maintenant
+      </a>
+      <a class="btn-secondary" href="mailto:dreux@helpconfort.com">
+        ✉ Envoyer un email
+      </a>
+    </div>
+    <div style="margin-top:20px;font-size:0.8rem;color:var(--navy);opacity:0.6">
+      Lun–Ven 8h–20h · Sam 8h30–13h30 · 39 Rue Hippolyte Lozier, 27320 Nonancourt
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-name">Help Confort<br>Dreux &amp; Évreux</div>
+        <div class="footer-info">
+          39 Rue Hippolyte Lozier<br>
+          27320 Nonancourt<br><br>
+          <a href="tel:+33232291250" onclick="gtag('event','click_call',{'event_category':'contact','event_label':'footer_phone'})">
+            📞 <span class="PHONE"></span>
+          </a><br>
+          <a href="mailto:dreux@helpconfort.com">✉ dreux@helpconfort.com</a><br><br>
+          Entreprise indépendante<br>membre du réseau Help Confort,<br>marque de La Poste
+        </div>
+      </div>
+      <div>
+        <div class="footer-hours-title">Horaires</div>
+        <div class="footer-hours-item"><span>Lundi</span><span>8h – 20h</span></div>
+        <div class="footer-hours-item"><span>Mardi</span><span>8h – 20h</span></div>
+        <div class="footer-hours-item"><span>Mercredi</span><span>8h – 20h</span></div>
+        <div class="footer-hours-item"><span>Jeudi</span><span>8h – 20h</span></div>
+        <div class="footer-hours-item"><span>Vendredi</span><span>8h – 20h</span></div>
+        <div class="footer-hours-item"><span>Samedi</span><span>8h30 – 13h30</span></div>
+        <div class="footer-hours-item"><span>Dimanche</span><span>Fermé</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="cgv.html">CGV</a>
+      </div>
+      <div class="footer-credit">© 2025 Help Confort Dreux &amp; Évreux</div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY BAR MOBILE -->
+<div class="sticky-bar">
+  <div class="sticky-text">
+    Dépannage urgent Évreux
+    <span>Lun–Ven 8h–20h · Sam 8h30–13h30</span>
+  </div>
+  <a class="btn-sticky" href="tel:+33232291250"
+     onclick="gtag('event','click_call',{'event_category':'contact','event_label':'sticky_bar'})">
+    📞 <span class="PHONE"></span>
+  </a>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <p class="cookie-text">
+    Nous utilisons des cookies pour mesurer nos performances et améliorer votre expérience.
+    <a href="politique-confidentialite.html">En savoir plus</a>.
+  </p>
+  <div class="cookie-buttons">
+    <button class="btn-accept-cookies" onclick="acceptCookies()">Accepter</button>
+    <button class="btn-refuse-cookies" onclick="refuseCookies()">Refuser</button>
+  </div>
+</div>
+
+<script>
+  // ─ Phone variable centralisée ─
+  var PHONE = "02 32 29 12 50";
+  var PHONE_HREF = "tel:+33232291250";
+
+  // ─ FAQ toggle ─
+  function toggleFaq(el) {
+    var item = el.parentElement;
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // ─ Cookie consent ─
+  function acceptCookies() {
+    localStorage.setItem('hc_cookie_consent', 'accepted');
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+    document.getElementById('cookie-banner').classList.remove('visible');
+  }
+
+  function refuseCookies() {
+    localStorage.setItem('hc_cookie_consent', 'refused');
+    document.getElementById('cookie-banner').classList.remove('visible');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var consent = localStorage.getItem('hc_cookie_consent');
+    if (!consent) {
+      setTimeout(function() {
+        document.getElementById('cookie-banner').classList.add('visible');
+      }, 1200);
+    } else if (consent === 'accepted') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
