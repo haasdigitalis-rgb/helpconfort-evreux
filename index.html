@@ -4,22 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dépannage Urgence Évreux – Plomberie, Électricité, Serrurerie | Help Confort</title>
-  <meta name="description" content="Dépannage urgent à Évreux et Dreux : plomberie, électricité, serrurerie, vitrerie, volets roulants. Intervention rapide 8h–20h du lundi au vendredi. Devis gratuit. Appelez le 02 32 29 12 50.">
+  <meta name="description" content="Dépannage urgent à Évreux et Dreux : plomberie, électricité, serrurerie, vitrerie, volets roulants. Intervention rapide 8h–20h. Devis gratuit. Appelez le 02 32 29 12 50.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://helpconfort-evreux.fr/">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TQXGW5Q9');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) – backup direct -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TQXGW5Q9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    // Consent Mode v2 - refus par défaut
+    // Consent Mode v2 – refus par défaut
     gtag('consent', 'default', {
       'analytics_storage': 'denied',
       'ad_storage': 'denied',
@@ -27,7 +33,6 @@
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
-    gtag('config', 'G-XXXXXXXXXX');
   </script>
 
   <!-- Schema LocalBusiness JSON-LD -->
@@ -36,8 +41,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Help Confort Dreux & Évreux",
-    "image": "",
-    "description": "Dépannage urgence et amélioration de l'habitat à Évreux et Dreux. Plomberie, électricité, serrurerie, vitrerie, volets roulants, adaptation PMR. Marque La Poste.",
+    "description": "Dépannage urgence et amélioration de l'habitat à Évreux et Dreux. Plomberie, électricité, serrurerie, vitrerie, volets roulants. Marque La Poste.",
     "telephone": "+33232291250",
     "email": "dreux@helpconfort.com",
     "address": {
@@ -66,33 +70,26 @@
       --gray: #7A8196;
       --border: #E2E5EE;
       --text: #1C2238;
+      --laposte-yellow: #FFCD00;
+      --laposte-blue: #003189;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Barlow', sans-serif;
       color: var(--text);
       background: var(--white);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      padding-bottom: 68px;
     }
-
     h1, h2, h3, h4 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       line-height: 1.1;
       text-transform: uppercase;
     }
-
     a { text-decoration: none; color: inherit; }
-
-    img { max-width: 100%; display: block; }
-
-    /* ── PHONE VAR ── */
-    .PHONE::before { content: "02 32 29 12 50"; }
 
     /* ── URGENCE BANDEAU ── */
     .urgence-band {
@@ -105,15 +102,12 @@
       font-size: 0.95rem;
       letter-spacing: 0.04em;
     }
-    .urgence-band a {
-      color: var(--yellow);
-      text-decoration: underline;
-    }
+    .urgence-band a { color: var(--yellow); text-decoration: underline; }
 
     /* ── HEADER ── */
     .header {
       background: var(--navy);
-      padding: 14px 20px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -123,60 +117,25 @@
       z-index: 900;
       box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     }
-
-    .header-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .header-logo img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
     }
-
-    .logo-badge {
-      background: var(--yellow);
-      color: var(--navy);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 1.1rem;
-      padding: 6px 12px;
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-    }
-
-    .logo-sub {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.75rem;
-      font-weight: 500;
-      line-height: 1.3;
-    }
-
-    .laposte-tag {
-      background: var(--yellow);
-      color: var(--navy);
-      font-size: 0.6rem;
-      font-weight: 700;
-      padding: 2px 5px;
-      letter-spacing: 0.06em;
-    }
-
     .header-cta {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 4px;
+      gap: 3px;
     }
-
     .header-phone {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       color: var(--yellow);
       letter-spacing: 0.02em;
     }
-
-    .header-hours {
-      font-size: 0.7rem;
-      color: rgba(255,255,255,0.6);
-    }
-
+    .header-hours { font-size: 0.68rem; color: rgba(255,255,255,0.55); }
     .btn-call-header {
       display: none;
       background: var(--yellow);
@@ -188,42 +147,28 @@
       letter-spacing: 0.05em;
       white-space: nowrap;
     }
+    @media (min-width: 600px) {
+      .btn-call-header { display: inline-flex; align-items: center; gap: 8px; }
+      .header-phone { display: none; }
+    }
 
     /* ── HERO ── */
     .hero {
       background: var(--navy);
+      padding: 52px 20px 56px;
       position: relative;
       overflow: hidden;
-      padding: 56px 20px 60px;
     }
-
     .hero::before {
       content: '';
       position: absolute;
-      top: -60px; right: -80px;
-      width: 420px; height: 420px;
+      top: -80px; right: -100px;
+      width: 440px; height: 440px;
       background: var(--yellow);
-      opacity: 0.06;
+      opacity: 0.05;
       border-radius: 50%;
     }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -40px; left: -60px;
-      width: 280px; height: 280px;
-      background: var(--yellow);
-      opacity: 0.04;
-      border-radius: 50%;
-    }
-
-    .hero-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2;
-    }
-
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 2; }
     .hero-tag {
       display: inline-flex;
       align-items: center;
@@ -235,44 +180,28 @@
       font-size: 0.85rem;
       letter-spacing: 0.08em;
       padding: 5px 12px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
-
-    .hero-tag::before {
-      content: '⚡';
-      font-size: 0.9rem;
-    }
-
     .hero h1 {
       color: var(--white);
       font-size: clamp(2.4rem, 7vw, 3.8rem);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
-
-    .hero h1 span {
-      color: var(--yellow);
-    }
-
+    .hero h1 span { color: var(--yellow); }
     .hero-sub {
       color: rgba(255,255,255,0.75);
       font-size: 1.05rem;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       max-width: 560px;
     }
-
-    .hero-phone-block {
-      margin-bottom: 28px;
-    }
-
     .hero-phone-label {
-      color: rgba(255,255,255,0.55);
-      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-bottom: 6px;
     }
-
     .btn-call-hero {
       display: inline-flex;
       align-items: center;
@@ -281,60 +210,90 @@
       color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 1.6rem;
+      font-size: 1.55rem;
       padding: 16px 28px;
       letter-spacing: 0.04em;
       transition: background 0.2s, transform 0.2s;
+      margin-bottom: 24px;
     }
-
-    .btn-call-hero:hover {
-      background: var(--yellow-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-call-hero .icon {
-      font-size: 1.4rem;
-      animation: ring 2.5s ease infinite;
-    }
-
+    .btn-call-hero:hover { background: var(--yellow-dark); transform: translateY(-2px); }
+    .btn-call-hero .icon { animation: ring 2.5s ease infinite; display: inline-block; }
     @keyframes ring {
-      0%, 90%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(12deg); }
-      94% { transform: rotate(-10deg); }
-      96% { transform: rotate(8deg); }
-      98% { transform: rotate(-6deg); }
+      0%,90%,100%{transform:rotate(0)}
+      92%{transform:rotate(12deg)}
+      94%{transform:rotate(-10deg)}
+      96%{transform:rotate(8deg)}
+      98%{transform:rotate(-5deg)}
     }
-
-    .hero-reassurance {
+    .hero-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
+      gap: 10px;
+      margin-top: 20px;
     }
-
     .hero-pill {
       display: flex;
       align-items: center;
       gap: 6px;
       background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.14);
       color: rgba(255,255,255,0.85);
       font-size: 0.82rem;
       font-weight: 500;
       padding: 6px 12px;
     }
+    .hero-pill .ck { color: var(--yellow); }
 
-    .hero-pill .check {
-      color: var(--yellow);
-      font-size: 0.9rem;
+    /* ── LA POSTE RÉASSURANCE ── */
+    .laposte-band {
+      background: var(--white);
+      border-bottom: 3px solid var(--yellow);
+      padding: 14px 20px;
     }
+    .laposte-band-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .laposte-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+    }
+    .laposte-logo-wrap img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
+    .laposte-logo-wrap span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .laposte-text {
+      font-size: 0.82rem;
+      color: var(--gray);
+      max-width: 440px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .laposte-text strong { color: var(--navy); }
 
-    /* ── PREUVES / STATS ── */
+    /* ── STATS ── */
     .stats {
       background: var(--yellow);
-      padding: 28px 20px;
+      padding: 24px 20px;
     }
-
     .stats-grid {
       max-width: 720px;
       margin: 0 auto;
@@ -343,11 +302,6 @@
       gap: 8px;
       text-align: center;
     }
-
-    .stat-item {
-      padding: 12px 8px;
-    }
-
     .stat-num {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
@@ -355,90 +309,53 @@
       color: var(--navy);
       line-height: 1;
     }
-
     .stat-label {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
       color: var(--navy);
-      opacity: 0.75;
-      margin-top: 4px;
+      opacity: 0.7;
+      margin-top: 3px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
 
-    /* ── SECTION TITLES ── */
+    /* ── SECTION COMMONS ── */
     .section-title {
-      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       color: var(--navy);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
-
-    .section-sub {
-      color: var(--gray);
-      font-size: 0.95rem;
-      margin-bottom: 36px;
-    }
-
-    .accent-line {
-      width: 48px;
-      height: 4px;
-      background: var(--yellow);
-      margin: 12px 0 20px;
-    }
+    .section-sub { color: var(--gray); font-size: 0.95rem; margin-bottom: 32px; }
+    .accent-line { width: 48px; height: 4px; background: var(--yellow); margin: 10px 0 18px; }
+    .section-pad { padding: 56px 20px; }
 
     /* ── SERVICES ── */
-    .services {
-      padding: 60px 20px;
-      background: var(--light);
-    }
-
-    .services-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
+    .services { background: var(--light); }
+    .services-inner, .confiance-inner, .avis-inner, .zone-inner, .faq-inner { max-width: 720px; margin: 0 auto; }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 12px;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
-
+    @media(max-width:480px){ .services-grid { grid-template-columns: 1fr; } }
     .service-card {
       background: var(--white);
       padding: 20px;
       border-left: 4px solid var(--yellow);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-
-    .service-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(14,26,53,0.1);
-    }
-
-    .service-icon {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
+    .service-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(14,26,53,0.1); }
+    .service-icon { font-size: 1.8rem; margin-bottom: 8px; }
     .service-name {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       font-size: 1.1rem;
       color: var(--navy);
       text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
-
-    .service-desc {
-      font-size: 0.82rem;
-      color: var(--gray);
-      line-height: 1.5;
-    }
-
-    .services-cta {
-      text-align: center;
-    }
+    .service-desc { font-size: 0.82rem; color: var(--gray); line-height: 1.5; }
 
     /* ── BOUTONS ── */
     .btn-primary {
@@ -449,71 +366,48 @@
       color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 1.15rem;
-      padding: 15px 28px;
+      font-size: 1.1rem;
+      padding: 14px 26px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       transition: background 0.2s, transform 0.2s;
-      cursor: pointer;
       border: none;
+      cursor: pointer;
     }
-
-    .btn-primary:hover {
-      background: var(--yellow-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
+    .btn-primary:hover { background: var(--yellow-dark); transform: translateY(-2px); }
+    .btn-outline {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: transparent;
       color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 1.05rem;
-      padding: 14px 24px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 13px 22px;
       border: 2px solid var(--navy);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       transition: all 0.2s;
-      cursor: pointer;
     }
-
-    .btn-secondary:hover {
-      background: var(--navy);
-      color: var(--white);
-    }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+    .ctr { text-align: center; }
 
     /* ── CONFIANCE ── */
-    .confiance {
-      padding: 60px 20px;
-      background: var(--white);
-    }
-
-    .confiance-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
+    .confiance { background: var(--white); }
     .confiance-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-bottom: 40px;
+      gap: 14px;
+      margin-bottom: 36px;
     }
-
+    @media(max-width:480px){ .confiance-grid { grid-template-columns: 1fr; } }
     .confiance-card {
       background: var(--light);
-      padding: 24px 20px;
+      padding: 22px 18px;
       border-top: 3px solid var(--navy);
     }
-
-    .confiance-icon {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-    }
-
+    .confiance-icon { font-size: 1.5rem; margin-bottom: 8px; }
     .confiance-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
@@ -522,86 +416,89 @@
       color: var(--navy);
       margin-bottom: 6px;
     }
+    .confiance-text { font-size: 0.82rem; color: var(--gray); line-height: 1.5; }
 
-    .confiance-text {
+    /* ── RÉASSURANCE LA POSTE (grande section) ── */
+    .reassurance-laposte {
+      background: var(--navy);
+      padding: 40px 20px;
+    }
+    .reassurance-laposte-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .reassurance-laposte-logo {
+      flex-shrink: 0;
+      background: var(--white);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .reassurance-laposte-logo img { height: 48px; width: auto; }
+    .reassurance-laposte-logo .hc-logo { height: 40px; }
+    .reassurance-laposte-content { flex: 1; min-width: 220px; }
+    .reassurance-laposte-content h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--yellow);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .reassurance-laposte-content p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.6;
+    }
+    .reassurance-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .reassurance-pill {
+      background: rgba(245,196,0,0.15);
+      border: 1px solid rgba(245,196,0,0.3);
+      color: var(--yellow);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
       font-size: 0.82rem;
-      color: var(--gray);
-      line-height: 1.5;
+      padding: 5px 12px;
+      letter-spacing: 0.04em;
     }
 
     /* ── AVIS ── */
-    .avis-section {
-      padding: 60px 20px;
-      background: var(--navy);
-    }
-
-    .avis-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .avis-section .section-title {
-      color: var(--white);
-    }
-
-    .avis-section .section-sub {
-      color: rgba(255,255,255,0.6);
-    }
-
+    .avis-section { background: var(--light); }
     .avis-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
-      margin-bottom: 36px;
+      gap: 14px;
+      margin-bottom: 32px;
     }
-
+    @media(min-width:560px){ .avis-grid { grid-template-columns: repeat(2, 1fr); } }
     .avis-card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: var(--white);
       padding: 20px;
+      border-left: 4px solid var(--yellow);
     }
-
-    .avis-stars {
-      color: var(--yellow);
-      font-size: 1rem;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    .avis-text {
-      color: rgba(255,255,255,0.85);
-      font-size: 0.9rem;
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-
+    .avis-stars { color: var(--yellow); font-size: 1rem; margin-bottom: 8px; letter-spacing: 2px; }
+    .avis-text { color: var(--gray); font-size: 0.88rem; line-height: 1.6; font-style: italic; margin-bottom: 10px; }
     .avis-author {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      color: var(--yellow);
-      font-size: 0.9rem;
+      color: var(--navy);
+      font-size: 0.88rem;
       text-transform: uppercase;
     }
 
     /* ── ZONE ── */
-    .zone {
-      padding: 60px 20px;
-      background: var(--light);
-    }
-
-    .zone-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .zone-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 36px;
-    }
-
+    .zone { background: var(--white); }
+    .zone-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
     .zone-tag {
       background: var(--navy);
       color: var(--white);
@@ -613,27 +510,14 @@
     }
 
     /* ── FAQ ── */
-    .faq {
-      padding: 60px 20px;
-      background: var(--white);
-    }
-
-    .faq-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 0;
-    }
-
+    .faq { background: var(--light); }
+    .faq-item { border-bottom: 1px solid var(--border); }
     .faq-question {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       font-size: 1.05rem;
       color: var(--navy);
-      padding: 18px 0;
+      padding: 16px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -642,132 +526,72 @@
       text-transform: uppercase;
       letter-spacing: 0.02em;
     }
-
-    .faq-question .arrow {
-      font-size: 1rem;
-      color: var(--yellow);
-      flex-shrink: 0;
-      transition: transform 0.2s;
-    }
-
-    .faq-item.open .arrow {
-      transform: rotate(180deg);
-    }
-
+    .faq-question .arrow { color: var(--yellow); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .arrow { transform: rotate(180deg); }
     .faq-answer {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--gray);
       line-height: 1.7;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease, padding 0.3s ease;
-      padding: 0;
     }
-
-    .faq-item.open .faq-answer {
-      max-height: 200px;
-      padding-bottom: 18px;
-    }
+    .faq-item.open .faq-answer { max-height: 200px; padding-bottom: 16px; }
 
     /* ── CTA FINAL ── */
     .cta-final {
-      padding: 64px 20px;
       background: var(--yellow);
-    }
-
-    .cta-final-inner {
-      max-width: 720px;
-      margin: 0 auto;
+      padding: 60px 20px;
       text-align: center;
     }
-
-    .cta-final h2 {
-      color: var(--navy);
-      font-size: clamp(2rem, 6vw, 3rem);
-      margin-bottom: 12px;
-    }
-
-    .cta-final p {
-      color: var(--navy);
-      opacity: 0.7;
-      font-size: 1rem;
-      margin-bottom: 32px;
-    }
-
+    .cta-final h2 { color: var(--navy); font-size: clamp(2rem, 6vw, 2.8rem); margin-bottom: 10px; }
+    .cta-final p { color: var(--navy); opacity: 0.65; font-size: 0.95rem; margin-bottom: 24px; }
     .cta-final-phone {
+      display: block;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       font-size: clamp(2rem, 8vw, 3rem);
       color: var(--navy);
-      display: block;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-
-    .cta-final-actions {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+    .cta-final-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
     /* ── FOOTER ── */
-    .footer {
-      background: var(--navy);
-      padding: 40px 20px 24px;
-    }
-
-    .footer-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
+    .footer { background: var(--navy); padding: 36px 20px 20px; }
+    .footer-inner { max-width: 720px; margin: 0 auto; }
     .footer-top {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      padding-bottom: 28px;
+      gap: 28px;
+      padding-bottom: 24px;
       border-bottom: 1px solid rgba(255,255,255,0.1);
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-
-    .footer-name {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--yellow);
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .footer-info {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.82rem;
-      line-height: 1.8;
-    }
-
-    .footer-info a {
-      color: var(--yellow);
-    }
-
+    @media(max-width:480px){ .footer-top { grid-template-columns: 1fr; } }
+    .footer-logo-wrap { margin-bottom: 12px; }
+    .footer-logo-wrap img { height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.9; }
+    .footer-info { color: rgba(255,255,255,0.55); font-size: 0.8rem; line-height: 1.8; }
+    .footer-info a { color: var(--yellow); }
+    .footer-lp { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+    .footer-lp img { height: 24px; width: auto; }
+    .footer-lp span { color: rgba(255,255,255,0.4); font-size: 0.72rem; }
     .footer-hours-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--white);
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 10px;
     }
-
     .footer-hours-item {
       display: flex;
       justify-content: space-between;
-      color: rgba(255,255,255,0.6);
-      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.78rem;
       padding: 3px 0;
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
-
     .footer-bottom {
       display: flex;
       flex-wrap: wrap;
@@ -775,27 +599,10 @@
       justify-content: space-between;
       align-items: center;
     }
-
-    .footer-legal {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .footer-legal a {
-      color: rgba(255,255,255,0.4);
-      font-size: 0.75rem;
-      transition: color 0.2s;
-    }
-
-    .footer-legal a:hover {
-      color: var(--yellow);
-    }
-
-    .footer-credit {
-      color: rgba(255,255,255,0.3);
-      font-size: 0.7rem;
-    }
+    .footer-legal { display: flex; flex-wrap: wrap; gap: 14px; }
+    .footer-legal a { color: rgba(255,255,255,0.35); font-size: 0.72rem; transition: color 0.2s; }
+    .footer-legal a:hover { color: var(--yellow); }
+    .footer-credit { color: rgba(255,255,255,0.25); font-size: 0.68rem; }
 
     /* ── STICKY BAR ── */
     .sticky-bar {
@@ -805,14 +612,13 @@
       right: 0;
       background: var(--yellow);
       z-index: 999;
-      padding: 12px 16px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
       box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
     }
-
     .sticky-text {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
@@ -821,14 +627,7 @@
       text-transform: uppercase;
       line-height: 1.2;
     }
-
-    .sticky-text span {
-      display: block;
-      font-weight: 500;
-      font-size: 0.75rem;
-      opacity: 0.7;
-    }
-
+    .sticky-text span { display: block; font-weight: 500; font-size: 0.72rem; opacity: 0.7; }
     .btn-sticky {
       flex-shrink: 0;
       display: flex;
@@ -838,59 +637,24 @@
       color: var(--white);
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 1.1rem;
-      padding: 11px 18px;
+      font-size: 1.05rem;
+      padding: 10px 16px;
       letter-spacing: 0.04em;
       transition: background 0.2s;
       animation: pulse-btn 2s ease infinite;
     }
-
     @keyframes pulse-btn {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(14,26,53,0.4); }
-      50% { box-shadow: 0 0 0 8px rgba(14,26,53,0); }
+      0%,100%{box-shadow:0 0 0 0 rgba(14,26,53,0.4)}
+      50%{box-shadow:0 0 0 8px rgba(14,26,53,0)}
     }
-
     .btn-sticky:hover { background: var(--navy-light); }
-
-    /* ── MARQUE LA POSTE ── */
-    .laposte-banner {
-      background: var(--white);
-      border-top: 3px solid var(--yellow);
-      padding: 16px 20px;
-      text-align: center;
-    }
-
-    .laposte-banner-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .laposte-banner-text {
-      font-size: 0.82rem;
-      color: var(--gray);
-    }
-
-    .laposte-badge {
-      background: var(--yellow);
-      color: var(--navy);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      letter-spacing: 0.05em;
-    }
 
     /* ── COOKIE BANNER ── */
     #cookie-banner {
       position: fixed;
-      bottom: 72px;
-      left: 12px;
-      right: 12px;
+      bottom: 70px;
+      left: 10px;
+      right: 10px;
       background: var(--navy);
       color: var(--white);
       z-index: 9999;
@@ -898,29 +662,13 @@
       border-top: 3px solid var(--yellow);
       box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
       display: none;
-      max-width: 480px;
+      max-width: 460px;
       margin: 0 auto;
     }
-
     #cookie-banner.visible { display: block; }
-
-    .cookie-text {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.8);
-      margin-bottom: 14px;
-      line-height: 1.5;
-    }
-
-    .cookie-text a {
-      color: var(--yellow);
-      text-decoration: underline;
-    }
-
-    .cookie-buttons {
-      display: flex;
-      gap: 10px;
-    }
-
+    .cookie-text { font-size: 0.82rem; color: rgba(255,255,255,0.8); margin-bottom: 12px; line-height: 1.5; }
+    .cookie-text a { color: var(--yellow); text-decoration: underline; }
+    .cookie-buttons { display: flex; gap: 10px; }
     .btn-accept-cookies {
       background: var(--yellow);
       color: var(--navy);
@@ -930,9 +678,7 @@
       font-size: 0.9rem;
       padding: 9px 18px;
       cursor: pointer;
-      letter-spacing: 0.04em;
     }
-
     .btn-refuse-cookies {
       background: transparent;
       color: rgba(255,255,255,0.6);
@@ -941,55 +687,35 @@
       padding: 9px 14px;
       cursor: pointer;
     }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 540px) {
-      .header-phone { font-size: 1.1rem; }
-      .services-grid { grid-template-columns: 1fr; }
-      .confiance-grid { grid-template-columns: 1fr; }
-      .footer-top { grid-template-columns: 1fr; }
-      .stats-grid { grid-template-columns: 3fr; }
-    }
-
-    @media (min-width: 600px) {
-      .avis-grid { grid-template-columns: repeat(2, 1fr); }
-      .btn-call-header { display: inline-flex; }
-      .header-phone { display: none; }
-    }
-
-    /* Body bottom padding for sticky */
-    body { padding-bottom: 64px; }
   </style>
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQXGW5Q9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- URGENCE BANDEAU -->
 <div class="urgence-band">
-  🚨 DÉPANNAGE URGENT ÉVREUX – Intervention rapide 8h–20h —
-  <a href="tel:+33232291250" onclick="gtag('event','click_call',{'event_category':'contact','event_label':'bandeau_urgence'})">
-    <span class="PHONE"></span>
-  </a>
+  🚨 DÉPANNAGE URGENT ÉVREUX &amp; DREUX —
+  <a href="tel:+33232291250" onclick="gtag('event','click_call',{'event_category':'contact','event_label':'bandeau'})">02 32 29 12 50</a>
+  — Lun–Ven 8h–20h · Sam 8h30–13h30
 </div>
 
 <!-- HEADER -->
 <header class="header">
   <div class="header-logo">
-    <div>
-      <div class="logo-badge">HELP CONFORT</div>
-      <div class="logo-sub">
-        Dreux &amp; Évreux<br>
-        <span class="laposte-tag">✦ MARQUE LA POSTE</span>
-      </div>
-    </div>
+    <img src="data:image/png;base64,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" alt="Help Confort – Une marque de La Poste" />
   </div>
   <div class="header-cta">
     <a class="btn-call-header" href="tel:+33232291250"
        onclick="gtag('event','click_call',{'event_category':'contact','event_label':'header_btn'})">
-      📞 <span class="PHONE"></span>
+      📞 02 32 29 12 50
     </a>
     <a class="header-phone" href="tel:+33232291250"
        onclick="gtag('event','click_call',{'event_category':'contact','event_label':'header_phone'})">
-      <span class="PHONE"></span>
+      02 32 29 12 50
     </a>
     <div class="header-hours">Lun–Ven 8h–20h · Sam 8h30–13h30</div>
   </div>
@@ -998,63 +724,65 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-tag">INTERVENTION RAPIDE À ÉVREUX</div>
+    <div class="hero-tag">⚡ INTERVENTION RAPIDE À ÉVREUX &amp; DREUX</div>
     <h1>Dépannage urgent<br><span>à Évreux ?</span><br>On arrive.</h1>
     <p class="hero-sub">
       Plomberie, électricité, serrurerie, vitrerie, volets roulants.
       Techniciens qualifiés, assurés, disponibles du lundi au samedi.
     </p>
-    <div class="hero-phone-block">
-      <div class="hero-phone-label">Appelez maintenant – Devis gratuit</div>
-      <a class="btn-call-hero" href="tel:+33232291250"
-         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'hero_cta'})">
-        <span class="icon">📞</span>
-        <span class="PHONE"></span>
-      </a>
-    </div>
-    <div class="hero-reassurance">
-      <div class="hero-pill"><span class="check">✓</span> Devis gratuit</div>
-      <div class="hero-pill"><span class="check">✓</span> Techniciens assurés RC Pro</div>
-      <div class="hero-pill"><span class="check">✓</span> +60 agences en France</div>
-      <div class="hero-pill"><span class="check">✓</span> Marque La Poste</div>
-      <div class="hero-pill"><span class="check">✓</span> Intervention sam. matin</div>
+    <div class="hero-phone-label">Appelez maintenant – Devis gratuit</div>
+    <a class="btn-call-hero" href="tel:+33232291250"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'hero_cta'})">
+      <span class="icon">📞</span> 02 32 29 12 50
+    </a>
+    <div class="hero-pills">
+      <div class="hero-pill"><span class="ck">✓</span> Devis gratuit</div>
+      <div class="hero-pill"><span class="ck">✓</span> RC Pro &amp; Assurance décennale</div>
+      <div class="hero-pill"><span class="ck">✓</span> +60 agences en France</div>
+      <div class="hero-pill"><span class="ck">✓</span> Marque La Poste</div>
+      <div class="hero-pill"><span class="ck">✓</span> Sam. matin disponible</div>
     </div>
   </div>
 </section>
 
+<!-- LA POSTE RÉASSURANCE BANDEAU -->
+<div class="laposte-band">
+  <div class="laposte-band-inner">
+    <div class="laposte-logo-wrap">
+      <img src="data:image/png;base64,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" alt="Logo La Poste" />
+      <span>Une marque de La Poste</span>
+    </div>
+    <p class="laposte-text">
+      Help Confort Évreux &amp; Dreux est une <strong>entreprise indépendante</strong> membre du réseau
+      <strong>Help Confort, marque de La Poste</strong> — gage de sérieux, proximité et confiance.
+    </p>
+  </div>
+</div>
+
 <!-- STATS -->
 <div class="stats">
   <div class="stats-grid">
-    <div class="stat-item">
+    <div>
       <div class="stat-num">+60</div>
-      <div class="stat-label">Agences France</div>
+      <div class="stat-label">Agences en France</div>
     </div>
-    <div class="stat-item">
-      <div class="stat-num">24h</div>
-      <div class="stat-label">Délai moyen devis</div>
+    <div>
+      <div class="stat-num">8h–20h</div>
+      <div class="stat-label">Disponibilité Lun–Ven</div>
     </div>
-    <div class="stat-item">
-      <div class="stat-num">7+</div>
+    <div>
+      <div class="stat-num">7</div>
       <div class="stat-label">Métiers couverts</div>
     </div>
   </div>
 </div>
 
-<!-- MARQUE LA POSTE -->
-<div class="laposte-banner">
-  <div class="laposte-banner-inner">
-    <span class="laposte-badge">✦ MARQUE LA POSTE</span>
-    <span class="laposte-banner-text">Help Confort Évreux est une entreprise indépendante membre du réseau Help Confort, marque de La Poste – gage de sérieux, proximité et confiance.</span>
-  </div>
-</div>
-
 <!-- SERVICES -->
-<section class="services">
+<section class="services section-pad">
   <div class="services-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Nos Interventions à Évreux</h2>
-    <p class="section-sub">Second œuvre, dépannage urgent et amélioration de l'habitat</p>
-
+    <p class="section-sub">Second œuvre, dépannage urgent et amélioration de l'habitat dans l'Eure</p>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">💧</div>
@@ -1069,26 +797,25 @@
       <div class="service-card">
         <div class="service-icon">🔐</div>
         <div class="service-name">Serrurerie</div>
-        <div class="service-desc">Ouverture porte claquée/verrouillée, remplacement serrures, cylindres, boîtes aux lettres.</div>
+        <div class="service-desc">Ouverture porte claquée ou verrouillée, remplacement serrures, cylindres, boîtes aux lettres.</div>
       </div>
       <div class="service-card">
         <div class="service-icon">🪟</div>
         <div class="service-name">Vitrerie</div>
-        <div class="service-desc">Remplacement vitrage cassé ou fissuré, simple / double / triple vitrage, miroirs.</div>
+        <div class="service-desc">Remplacement vitrage cassé ou fissuré, simple / double / triple vitrage, miroirs sur mesure.</div>
       </div>
       <div class="service-card">
         <div class="service-icon">🏠</div>
         <div class="service-name">Volets Roulants</div>
-        <div class="service-desc">Réparation et pose volets manuels ou motorisés, PVC ou aluminium, sur mesure.</div>
+        <div class="service-desc">Réparation et pose volets manuels ou motorisés, PVC ou aluminium, standards ou sur mesure.</div>
       </div>
       <div class="service-card">
         <div class="service-icon">♿</div>
         <div class="service-name">Adaptation PMR</div>
-        <div class="service-desc">Aménagements normes PMR, logements privés et ERP, transformation baignoire en douche.</div>
+        <div class="service-desc">Aménagements normes PMR, logements et ERP, transformation baignoire en douche.</div>
       </div>
     </div>
-
-    <div class="services-cta">
+    <div class="ctr">
       <a class="btn-primary" href="tel:+33232291250"
          onclick="gtag('event','click_call',{'event_category':'contact','event_label':'services_cta'})">
         📞 Appeler pour un devis gratuit
@@ -1097,13 +824,37 @@
   </div>
 </section>
 
+<!-- RÉASSURANCE GRANDE LA POSTE -->
+<section class="reassurance-laposte">
+  <div class="reassurance-laposte-inner">
+    <div class="reassurance-laposte-logo">
+      <img src="data:image/png;base64,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" alt="Help Confort" class="hc-logo" />
+      <img src="data:image/png;base64,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" alt="La Poste" />
+    </div>
+    <div class="reassurance-laposte-content">
+      <h3>La confiance du réseau La Poste</h3>
+      <p>
+        Help Confort est le <strong style="color:var(--yellow)">premier réseau national de dépannage d'urgence</strong>
+        avec plus de 60 agences partout en France. Marque de La Poste, Help Confort incarne
+        la proximité, le sérieux et la fiabilité au quotidien.
+      </p>
+      <div class="reassurance-pills">
+        <span class="reassurance-pill">✓ Marque La Poste</span>
+        <span class="reassurance-pill">✓ +60 agences France</span>
+        <span class="reassurance-pill">✓ RC Pro assurée</span>
+        <span class="reassurance-pill">✓ Assurance décennale</span>
+        <span class="reassurance-pill">✓ Techniciens qualifiés</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONFIANCE -->
-<section class="confiance">
+<section class="confiance section-pad">
   <div class="confiance-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Pourquoi Choisir Help Confort ?</h2>
-    <p class="section-sub">Des garanties concrètes pour votre tranquillité</p>
-
+    <p class="section-sub">Des garanties concrètes pour votre tranquillité d'esprit</p>
     <div class="confiance-grid">
       <div class="confiance-card">
         <div class="confiance-icon">🛡️</div>
@@ -1112,64 +863,67 @@
       </div>
       <div class="confiance-card">
         <div class="confiance-icon">📋</div>
-        <div class="confiance-title">Devis clair avant intervention</div>
-        <div class="confiance-text">Tarification au forfait ou horaire, devis détaillé fourni avant tout démarrage des travaux.</div>
+        <div class="confiance-title">Devis gratuit avant intervention</div>
+        <div class="confiance-text">Tarification au forfait ou horaire, devis détaillé remis avant tout démarrage. Aucune surprise.</div>
       </div>
       <div class="confiance-card">
         <div class="confiance-icon">🕗</div>
         <div class="confiance-title">Horaires étendus</div>
-        <div class="confiance-text">Disponibles lundi–vendredi 8h–20h et le samedi matin. Prise de RDV l'après-midi.</div>
+        <div class="confiance-text">Disponibles lundi–vendredi 8h–20h et le samedi matin. Intervention sur RDV l'après-midi.</div>
       </div>
       <div class="confiance-card">
         <div class="confiance-icon">📍</div>
-        <div class="confiance-title">Ancrage local fort</div>
-        <div class="confiance-text">Agence indépendante locale, connaissance du terrain ébroïcien, réactivité maximale sur Évreux et alentours.</div>
+        <div class="confiance-title">Ancrage local Évreux & Dreux</div>
+        <div class="confiance-text">Agence indépendante locale, parfaite connaissance du territoire ébroïcien et drouais.</div>
       </div>
+    </div>
+    <div class="ctr">
+      <a class="btn-primary" href="tel:+33232291250"
+         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'confiance_cta'})">
+        📞 02 32 29 12 50
+      </a>
     </div>
   </div>
 </section>
 
 <!-- AVIS -->
-<section class="avis-section">
+<section class="avis-section section-pad">
   <div class="avis-inner">
-    <div class="accent-line" style="background:var(--yellow)"></div>
+    <div class="accent-line"></div>
     <h2 class="section-title">Ce Que Disent Nos Clients</h2>
     <p class="section-sub">Évreux, Dreux et alentours</p>
-
     <div class="avis-grid">
       <div class="avis-card">
         <div class="avis-stars">★★★★★</div>
-        <p class="avis-text">« Intervention rapide pour une fuite d'eau chez moi à Évreux. Technicien sérieux, devis clair, problème réglé en 2h. Je recommande vraiment. »</p>
+        <p class="avis-text">« Intervention rapide pour une fuite d'eau chez moi à Évreux. Technicien sérieux, devis clair, problème réglé en 2h. »</p>
         <div class="avis-author">— Marie-Claude L., Évreux</div>
       </div>
       <div class="avis-card">
         <div class="avis-stars">★★★★★</div>
-        <p class="avis-text">« Porte claquée en plein milieu de journée. Rappelé en moins de 20 minutes, technicien sur place en 1h. Prix honnête et travail propre. »</p>
+        <p class="avis-text">« Porte claquée en pleine journée. Rappelé en 20 minutes, technicien sur place en 1h. Prix honnête, travail propre. »</p>
         <div class="avis-author">— Frédéric M., Dreux</div>
       </div>
       <div class="avis-card">
         <div class="avis-stars">★★★★☆</div>
-        <p class="avis-text">« Panne électrique résolue rapidement, l'équipe est professionnelle et rassurante. Je suis ravi de la qualité de service. »</p>
+        <p class="avis-text">« Panne électrique résolue rapidement. Équipe professionnelle et rassurante, je suis ravi de la qualité de service. »</p>
         <div class="avis-author">— Isabelle R., Nonancourt</div>
       </div>
     </div>
-
-    <div style="text-align:center">
+    <div class="ctr">
       <a class="btn-primary" href="tel:+33232291250"
          onclick="gtag('event','click_call',{'event_category':'contact','event_label':'avis_cta'})">
-        📞 Appelez-nous maintenant
+        📞 Appeler maintenant
       </a>
     </div>
   </div>
 </section>
 
 <!-- ZONE D'INTERVENTION -->
-<section class="zone">
+<section class="zone section-pad">
   <div class="zone-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Zone d'Intervention</h2>
-    <p class="section-sub">Nous intervenons à Évreux, Dreux et dans tout le secteur Eure / Eure-et-Loir</p>
-
+    <p class="section-sub">Évreux, Dreux et tout le secteur Eure / Eure-et-Loir</p>
     <div class="zone-list">
       <span class="zone-tag">📍 Évreux</span>
       <span class="zone-tag">📍 Dreux</span>
@@ -1183,97 +937,71 @@
       <span class="zone-tag">📍 Eure (27)</span>
       <span class="zone-tag">📍 Eure-et-Loir (28)</span>
     </div>
-
-    <div>
-      <a class="btn-primary" href="tel:+33232291250"
-         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'zone_cta'})">
-        📞 Vérifier la disponibilité dans votre secteur
-      </a>
-    </div>
+    <a class="btn-primary" href="tel:+33232291250"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'zone_cta'})">
+      📞 Vérifier la disponibilité dans votre secteur
+    </a>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq">
+<section class="faq section-pad">
   <div class="faq-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Questions Fréquentes</h2>
-    <p class="section-sub">Tout ce que vous devez savoir avant d'appeler</p>
-
+    <p class="section-sub">Tout savoir avant d'appeler</p>
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Intervenez-vous en urgence le soir ou le week-end ?
-        <span class="arrow">▼</span>
+        Intervenez-vous le week-end ? <span class="arrow">▼</span>
       </div>
-      <div class="faq-answer">
-        Nous intervenons du lundi au vendredi de 8h à 20h et le samedi matin de 8h30 à 13h30. Des RDV sont possibles l'après-midi le samedi sur demande. Appelez-nous pour connaître les disponibilités en temps réel.
-      </div>
+      <div class="faq-answer">Nous intervenons du lundi au vendredi de 8h à 20h et le samedi matin de 8h30 à 13h30. Des RDV sont possibles l'après-midi le samedi. Appelez-nous pour connaître les disponibilités en temps réel.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Le devis est-il vraiment gratuit ?
-        <span class="arrow">▼</span>
+        Le devis est-il vraiment gratuit ? <span class="arrow">▼</span>
       </div>
-      <div class="faq-answer">
-        Oui, systématiquement. Nos techniciens évaluent la situation avant toute intervention et vous remettent un devis détaillé. Aucun frais engagé sans votre accord.
-      </div>
+      <div class="faq-answer">Oui, systématiquement. Nos techniciens évaluent la situation avant toute intervention et vous remettent un devis détaillé. Aucun frais engagé sans votre accord explicite.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Vos techniciens sont-ils assurés ?
-        <span class="arrow">▼</span>
+        Vos techniciens sont-ils assurés ? <span class="arrow">▼</span>
       </div>
-      <div class="faq-answer">
-        Oui. Tous nos techniciens sont couverts par une assurance responsabilité civile professionnelle et une assurance décennale pour les travaux le nécessitant. Habilitations et formations à jour.
-      </div>
+      <div class="faq-answer">Oui. Tous nos techniciens sont couverts par une assurance RC Pro et une assurance décennale pour les travaux le nécessitant. Habilitations et formations sont maintenues à jour.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Quels modes de paiement acceptez-vous ?
-        <span class="arrow">▼</span>
+        Quels modes de paiement acceptez-vous ? <span class="arrow">▼</span>
       </div>
-      <div class="faq-answer">
-        Chèque et virement bancaire. Nos prestations sont facturées au forfait ou à l'heure selon la complexité de l'intervention, toujours avec devis préalable.
-      </div>
+      <div class="faq-answer">Chèque et virement bancaire. Nos prestations sont facturées au forfait ou à l'heure selon la complexité de l'intervention, toujours avec devis préalable.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Help Confort c'est quoi exactement ?
-        <span class="arrow">▼</span>
+        Help Confort c'est quoi ? <span class="arrow">▼</span>
       </div>
-      <div class="faq-answer">
-        Help Confort est le premier réseau national de dépannage d'urgence avec plus de 60 agences en France. C'est une marque de La Poste. L'agence de Dreux &amp; Évreux est une entreprise indépendante fière d'appartenir à ce réseau reconnu.
-      </div>
+      <div class="faq-answer">Help Confort est le premier réseau national de dépannage d'urgence avec plus de 60 agences en France. C'est une marque de La Poste. L'agence de Dreux &amp; Évreux est une entreprise indépendante fière d'appartenir à ce réseau reconnu.</div>
     </div>
   </div>
 </section>
 
 <!-- CTA FINAL -->
 <section class="cta-final">
-  <div class="cta-final-inner">
-    <h2>Un problème chez vous à Évreux ?<br>Appelez maintenant.</h2>
-    <p>Devis gratuit · Techniciens qualifiés · Marque La Poste</p>
-    <a class="cta-final-phone" href="tel:+33232291250"
-       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_phone'})">
-      📞 <span class="PHONE"></span>
+  <h2>Un problème chez vous à Évreux ?<br>Appelez maintenant.</h2>
+  <p>Devis gratuit · Techniciens qualifiés · Marque La Poste</p>
+  <a class="cta-final-phone" href="tel:+33232291250"
+     onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_phone'})">
+    📞 02 32 29 12 50
+  </a>
+  <div class="cta-final-actions">
+    <a class="btn-primary" href="tel:+33232291250" style="background:var(--navy);color:var(--white)"
+       onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_btn'})">
+      📞 Appeler maintenant
     </a>
-    <div class="cta-final-actions">
-      <a class="btn-secondary" href="tel:+33232291250"
-         style="background:var(--navy);color:var(--white);border-color:var(--navy)"
-         onclick="gtag('event','click_call',{'event_category':'contact','event_label':'cta_final_btn'})">
-        📞 Appeler maintenant
-      </a>
-      <a class="btn-secondary" href="mailto:dreux@helpconfort.com">
-        ✉ Envoyer un email
-      </a>
-    </div>
-    <div style="margin-top:20px;font-size:0.8rem;color:var(--navy);opacity:0.6">
-      Lun–Ven 8h–20h · Sam 8h30–13h30 · 39 Rue Hippolyte Lozier, 27320 Nonancourt
-    </div>
+    <a class="btn-outline" href="mailto:dreux@helpconfort.com" style="border-color:var(--navy)">
+      ✉ Envoyer un email
+    </a>
+  </div>
+  <div style="margin-top:16px;font-size:0.78rem;color:var(--navy);opacity:0.55">
+    Lun–Ven 8h–20h · Sam 8h30–13h30 · 39 Rue Hippolyte Lozier, 27320 Nonancourt
   </div>
 </section>
 
@@ -1282,15 +1010,19 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div class="footer-name">Help Confort<br>Dreux &amp; Évreux</div>
+        <div class="footer-logo-wrap">
+          <img src="data:image/png;base64,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" alt="Help Confort" />
+        </div>
         <div class="footer-info">
-          39 Rue Hippolyte Lozier<br>
-          27320 Nonancourt<br><br>
+          39 Rue Hippolyte Lozier<br>27320 Nonancourt<br><br>
           <a href="tel:+33232291250" onclick="gtag('event','click_call',{'event_category':'contact','event_label':'footer_phone'})">
-            📞 <span class="PHONE"></span>
+            📞 02 32 29 12 50
           </a><br>
-          <a href="mailto:dreux@helpconfort.com">✉ dreux@helpconfort.com</a><br><br>
-          Entreprise indépendante<br>membre du réseau Help Confort,<br>marque de La Poste
+          <a href="mailto:dreux@helpconfort.com">✉ dreux@helpconfort.com</a>
+        </div>
+        <div class="footer-lp">
+          <img src="data:image/png;base64,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" alt="La Poste" />
+          <span>Marque de La Poste</span>
         </div>
       </div>
       <div>
@@ -1315,7 +1047,7 @@
   </div>
 </footer>
 
-<!-- STICKY BAR MOBILE -->
+<!-- STICKY BAR -->
 <div class="sticky-bar">
   <div class="sticky-text">
     Dépannage urgent Évreux
@@ -1323,14 +1055,14 @@
   </div>
   <a class="btn-sticky" href="tel:+33232291250"
      onclick="gtag('event','click_call',{'event_category':'contact','event_label':'sticky_bar'})">
-    📞 <span class="PHONE"></span>
+    📞 02 32 29 12 50
   </a>
 </div>
 
 <!-- COOKIE BANNER -->
 <div id="cookie-banner">
   <p class="cookie-text">
-    Nous utilisons des cookies pour mesurer nos performances et améliorer votre expérience.
+    Nous utilisons des cookies pour mesurer nos performances.
     <a href="politique-confidentialite.html">En savoir plus</a>.
   </p>
   <div class="cookie-buttons">
@@ -1340,21 +1072,14 @@
 </div>
 
 <script>
-  // ─ Phone variable centralisée ─
-  var PHONE = "02 32 29 12 50";
-  var PHONE_HREF = "tel:+33232291250";
-
-  // ─ FAQ toggle ─
   function toggleFaq(el) {
     var item = el.parentElement;
     var isOpen = item.classList.contains('open');
     document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
     if (!isOpen) item.classList.add('open');
   }
-
-  // ─ Cookie consent ─
   function acceptCookies() {
-    localStorage.setItem('hc_cookie_consent', 'accepted');
+    localStorage.setItem('hc_consent', 'accepted');
     gtag('consent', 'update', {
       'analytics_storage': 'granted',
       'ad_storage': 'granted',
@@ -1363,18 +1088,16 @@
     });
     document.getElementById('cookie-banner').classList.remove('visible');
   }
-
   function refuseCookies() {
-    localStorage.setItem('hc_cookie_consent', 'refused');
+    localStorage.setItem('hc_consent', 'refused');
     document.getElementById('cookie-banner').classList.remove('visible');
   }
-
   document.addEventListener('DOMContentLoaded', function() {
-    var consent = localStorage.getItem('hc_cookie_consent');
+    var consent = localStorage.getItem('hc_consent');
     if (!consent) {
       setTimeout(function() {
         document.getElementById('cookie-banner').classList.add('visible');
-      }, 1200);
+      }, 1400);
     } else if (consent === 'accepted') {
       gtag('consent', 'update', {
         'analytics_storage': 'granted',
